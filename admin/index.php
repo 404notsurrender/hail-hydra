@@ -139,8 +139,8 @@
                     <?php
                         if (isset($_GET['a'])=='') {
                             include 'dashboard/index.php';
-                        } elseif ($_GET['a']=='pengguna') {
-                            include 'pengguna/index.php';
+                        } elseif ($_GET['a']=='users') {
+                            include 'users/index.php';
                         } elseif ($_GET['a']=='administrator') {
                             include 'administrator/index.php';
                         } elseif ($_GET['a']=='administratoradd') {

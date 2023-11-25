@@ -99,7 +99,7 @@
         } elseif ($_GET['p']=='mystory') {
             include 'story/mystory.php';
         } elseif ($_GET['p']=='notif') {
-            include 'notif/index.php';
+            include 'notification/index.php';
         } else {
             echo "<script>
                 alert('Halaman tidak ada.');
@@ -107,7 +107,8 @@
             </script>";
         }
 
-        if ($uri_segments[3] == 'index.php' && isset($uri_segments[4]) <> '') {
+        if (isset($uri_segments[3]) && $uri_segments[3] == 'index.php' && isset($uri_segments[4]) <> '') {
+
             echo "<script>
                 alert('Halaman tidak ada.');
                 window.location.href='../index.php';
